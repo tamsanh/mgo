@@ -583,7 +583,7 @@ var marshalErrorItems = []testItemType{
 	{bson.M{"": uint64(1 << 63)},
 		"BSON has no uint64 type, and value is too large to fit correctly in an int64"},
 	{bson.M{"": bson.ObjectId("tooshort")},
-		"ObjectIDs must be exactly 12 bytes long \\(got 8\\)"},
+		"ObjectIds must be exactly 12 bytes long \\(got 8\\)"},
 	{int64(123),
 		"Can't marshal int64 as a BSON document"},
 	{bson.M{"": 1i},
